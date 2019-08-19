@@ -1,11 +1,19 @@
 <?php
 //{"text":"белый лев","formsSettings":"FREQUENT"}
+
+
 if (!empty($_POST)) {
     $json = json_encode([
         'text' => $_POST['input'],
         'formsSettings' => $_POST['formsSettings']
     ]);
-    $result = send('http://api.loc/analizator.php', $json, false);
+
+    $protocol = strtolower(substr($_SERVER["SERVER_PROTOCOL"], 0, 5)) == 'https' ? 'https' : 'http';
+    $path = $protocol . '://';
+    $path .= $_SERVER['HTTP_HOST'];
+    $path .= '/analizator.php';
+
+    $result = send($path, $json, false);
 
     print_r($result);
 } else {
