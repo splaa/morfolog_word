@@ -1,0 +1,16 @@
+{
+  "name": "splx/anali",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andrii Lav",
+      "email": "splaandrey@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "Classes"
+    }
+  }
+}

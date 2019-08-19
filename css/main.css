@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #eef5f9;
+}
+
+.wrap .container {
+    color: rgba(0, 0, 0, 0.870588);
+    background-color: rgb(255, 255, 255);
+    transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.117647) 0px 1px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    position: relative;
+    margin-top: 50px;
+    padding: 36px 15px 15px;
+}
+
+.wrap .container .text-area textarea {
+    height: 192px;
+    width: 100%;
+    resize: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-variant-caps: inherit;
+    font-weight: inherit;
+    font-stretch: inherit;
+    line-height: inherit;
+    padding: 0px 5px;
+    cursor: inherit;
+    position: relative;
+    border: 1px solid rgb(238, 238, 238);
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.870588);
+    opacity: 1;
+    /*margin-top: 36px;*/
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.wrap .container .text-area .field-name {
+    position: relative;
+}
+
+.wrap .container .text-area .field-name label {
+    position: absolute;
+    top: -25px;
+    color: rgba(0, 0, 0, 0.298039);
+    font-size: 12px;
+}
+
+.radio-settings {
+    margin-bottom: 30px;
+}
+
